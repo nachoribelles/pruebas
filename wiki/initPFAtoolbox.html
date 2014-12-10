@@ -2,62 +2,21 @@
 <html>
 
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Pruebas : probando">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>linspace</title>
+<link rel="stylesheet" href="docstyle.css" type="text/css">
+<meta name="chunktype" content="refpage">
+<meta name="refentity" itemprop="refentity" content="function:linspace">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="toctype" itemprop="pagetype" content="fcn">
+<meta name="infotype" itemprop="infotype" content="ref/function">
   </head>
 
   <body>
 
-    <!-- HEADER -->
-</div><section id="doc_center_content">
-<div class="function_ref"><a name="bud27em"></a><div itemprop="content"><h1 class="r2014b" itemprop="title">linspace</h1><!-- SYNCHTO: _funcalpha.html --><div class="doc_topic_desc"><div class="purpose_container"><p itemprop="purpose">Generate linearly spaced vector</p><div class="switch"><a href="javascript:void(0);" id="expandAllPage">expand all in page</a></div></div></div></div><div class="refsummary" itemprop="content">
-<div class="shortsummary"><p>The <tt>linspace</tt> function generates linearly
-spaced vectors. It is similar to the colon operator "<tt>:</tt>"
-but gives direct control over the number of points and always includes
-the endpoints.</p></div>
-</div>
-<div class="ref_sect"><h2 id="syntax">Syntax</h2><div class="syntax_signature"><div class="syntax_signature_module"><ul><li><tt class="synopsis">y = linspace(x1,x2)</tt> <span class="syntax_example"><a href="linspace.html#bud284l-2" class="intrnllnk">example</a></span></li><li><tt class="synopsis">y = linspace(x1,x2,N)</tt> <span class="syntax_example"><a href="linspace.html#bud284l-2" class="intrnllnk">example</a></span></li></ul></div></div></div><div class="clear"></div><div itemprop="content" class="ref_sect"><a name="bud27em-1"></a><h2 id="description">Description</h2><div class="descriptions"><div class="description_module"><div class="description_element"><p class="syntax_example"><a href="linspace.html#bud284l-2" class="intrnllnk">example</a></p><p><span itemprop="syntax"><tt><a href="#outputarg_y" class="intrnllnk"><tt>y</tt></a> = linspace(<a href="#inputarg_x1x2" class="intrnllnk"><tt>x1,x2</tt></a>)</tt></span> returns
-a row vector with 100 linearly spaced points in the interval <tt>[x1,x2]</tt>.</p></div><div class="description_element"><p class="syntax_example"><a href="linspace.html#bud284l-2" class="intrnllnk">example</a></p><p><span itemprop="syntax"><tt><a href="#outputarg_y" class="intrnllnk"><tt>y</tt></a> = linspace(<a href="#inputarg_x1x2" class="intrnllnk"><tt>x1,x2</tt></a>,<a href="#inputarg_N" class="intrnllnk"><tt>N</tt></a>)</tt></span> returns <tt>N</tt> linearly
-spaced points.</p></div></div></div><div class="clear"></div></div><div itemprop="content" class="ref_sect"><div class="clear"></div><div class="examples"><h2 id="examples">Examples</h2><div class="expandableContent" id="expandableExamples"><p class="switch"><a href="javascript:void(0);" class="expandAllLink">expand all</a></p><div class="example_module expandableContent" id="example_1"><a name="bud284l-2"></a><h3 class="expand"><span><a style="display:block;" href="javascript:void(0);" title="Expand/Collapse"><span class="example_title">Create Vector of Evenly Spaced Real Numbers</span></a></span></h3><div class="collapse" style="display: none;"><p>Create a vector of 100 evenly spaced points in the interval <tt>[-5,5]</tt>.</p><pre class="programlisting codeinput">y = linspace(-5,5);</pre></div></div><div class="example_module expandableContent" id="example_2"><a name="bufmmx4"></a><h3 class="expand"><span><a style="display:block;" href="javascript:void(0);" title="Expand/Collapse"><span class="example_title">Create Vector with Specified Number of Values</span></a></span></h3><div class="collapse" style="display: none;"><p>Create a vector of 7 evenly spaced points in the interval <tt>[-5,5]</tt>.</p><pre class="programlisting codeinput">y1 = linspace(-5,5,7)</pre><pre class="programlisting codeoutput">y1 =
 
-   -5.0000   -3.3333   -1.6667         0    1.6667    3.3333    5.0000</pre></div></div><div class="example_module expandableContent" id="example_3"><a name="bud4gs2-1"></a><h3 class="expand"><span><a style="display:block;" href="javascript:void(0);" title="Expand/Collapse"><span class="example_title">Create Vector of Evenly Spaced Complex Numbers</span></a></span></h3><div class="collapse" style="display: none;"><p>Create a vector of complex numbers with 8 evenly spaced
-points between <tt>1+2i</tt> and <tt>10+10i</tt>.</p><pre class="programlisting codeinput">y = linspace(1+2i,10+10i,8)</pre><pre class="programlisting codeoutput">y =
-
-  Columns 1 through 5
-
-   1.0000 + 2.0000i   2.2857 + 3.1429i   3.5714 + 4.2857i   4.8571 + 5.4286i   6.1429 + 6.5714i
-
-  Columns 6 through 8
-
-   7.4286 + 7.7143i   8.7143 + 8.8571i  10.0000 +10.0000i</pre></div></div></div></div></div><div itemprop="content" class="ref_sect"><h2 id="inputs">Input Arguments</h2><div class="expandableContent"><div class="arguments"><div class="input_argument_container"><p class="switch"><a href="javascript:void(0);" class="expandAllLink">expand all</a></p><div class="expandableContent"><a name="inputarg_x1x2"></a><h3 id="input_argument_x1x2" class="expand"><span><a style="display: block;" href="javascript:void(0);" title="Expand/Collapse"><span class="argument_name"><tt>x1,x2</tt> — Point interval</span></a><span class="example_desc">pair of scalars</span></span></h3><div class="collapse" style="display: none;">
-<p>Point interval, specified as a pair of scalars. <tt>x1</tt> and <tt>x2</tt> define
-the interval over which <tt>linspace</tt> generates linearly
-spaced points (including the endpoints). <tt>x2</tt> can
-be either larger or smaller than <tt>x1</tt>. If <tt>x2</tt> is
-smaller than <tt>x1</tt>, then the vector contains descending
-values.</p>
-<p><b>Data Types:</b> <tt>double</tt> | <tt>single</tt> | <tt>datetime</tt> | <tt>duration</tt></p>
-<p class="datatypelist"><strong>Complex Number Support: </strong>Yes</p></div></div><div class="expandableContent"><a name="inputarg_N"></a><h3 id="input_argument_n" class="expand"><span><a style="display: block;" href="javascript:void(0);" title="Expand/Collapse"><span class="argument_name"><tt>N</tt> — Number of points</span></a><span class="example_desc">100  (default) | real numeric scalar</span></span></h3><div class="collapse" style="display: none;">
-<p>Number of points, specified as a real numeric scalar.</p>
-<p>For best results, specify <tt>N</tt> as a positive
-integer to indicate the number of linearly spaced points in the interval <tt>[x1,x2]</tt>.
-Otherwise:</p>
-<ul type="disc"><li><p>If <tt>N</tt> is <tt>1</tt>, then <tt>linspace</tt> returns <tt>x2</tt>.</p></li><li><p>If <tt>N</tt> is not an integer, then <tt>linspace</tt> uses
-a number of points equal to <tt>floor(double(N))</tt>.</p></li><li><p> If <tt>N</tt> rounds to zero or is negative,
-then <tt>linspace</tt> returns an empty 1-by-0 matrix.</p></li></ul>
-</div></div></div></div></div></div><div itemprop="content" class="ref_sect"><h2>Output Arguments</h2><div class="expandableContent"><div class="arguments"><div class="output_argument_container"><p class="switch"><a href="javascript:void(0);" class="expandAllLink">expand all</a></p><div class="expandableContent"><a name="outputarg_y"></a><h3 id="output_argument_y" class="expand"><span><a style="display: block;" href="javascript:void(0);" title="Expand/Collapse"><span class="argument_name"><tt>y</tt> — Vector of linearly spaced points</span></a><span class="example_desc">vector</span></span></h3><div class="collapse" style="display: none;">
-<p>Vector of linearly spaced points, returned as a vector. <tt>y</tt> contains <tt>N</tt> linearly
-spaced points in the interval <tt>[x1,x2]</tt>, including
-the endpoints, with the default number of points being 100.</p>
-<p><tt>linspace(x1,x2,N)</tt> uses a step size of <tt>(x2-x1)/(N-1)</tt>.</p>
-</div></div></div></div></div></div><div class="ref_sect">
-<h2>See Also</h2><p><span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="colon.html"><span itemprop="name"><tt>colon</tt></span></a></span> | <span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="logspace.html"><span itemprop="name"><tt>logspace</tt></span></a></span></p>
-
-
-
-</div>
-</div></section>
+rthjf
 
   </body>
 </html>
