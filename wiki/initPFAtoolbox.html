@@ -1,21 +1,145 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>initPFAtoolbox</title>
+<style type="text/css">
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="initPFAtoolbox">
+	body {
+		font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+		background-color: #FFF;
+		margin: 0;
+		padding: 0;
+		color: #000;
+	}
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+	ul, ol, dl { /
+		padding: 0;
+		margin: 0;
+	}
+	h1, h2, h3, h4, h5, h6, p {
+		margin-top: 0;	 
+		padding-right: 15px;
+		padding-left: 15px; 
+	}
+	a img { 
+		border: none;
+	}
+	a:link {
+		color:#414958;
+		text-decoration: underline;
+	}
+	a:visited {
+		color: #4E5869;
+		text-decoration: underline;
+	}
+	a:hover, a:active, a:focus { 
+		text-decoration: none;
+	}
+	.container {
+		width: 100%;
+		height:100%;
+		max-width: 1600px;
+		min-width: 1000px;
+		background-color: #FFF;
+		margin: 0 auto; 
+	}
+	.header {
+		background-color: #EEE;
+	}
+	.sidebar1 {
+		float: left;
+		width: 20%;
+		height:auto;
+		background-color: #FFF;
+		padding-bottom: 10px;
+		min-width: 250px;
+		max-width: 250px;
+	}
+	.content {
+		padding: 10px 0;
+		width: 75%;
+		height:100%;
+		float: left;
+	}
+	.content ul, .content ol { 
+		padding: 0 15px 15px 40px; 
+	}
 
-    <title>initPFAtoolbox</title>
-  </head>
+	ul.nav {
+		list-style: none; 
+		border-top: 1px solid #666; 
+		margin-bottom: 15px; 
+	}
+	ul.nav li {
+		border-bottom: 1px solid #666;
+	}
+	ul.nav a, ul.nav a:visited { 
+		padding: 5px 5px 5px 15px;
+		display: block; 
+		background-color: #8090AB;
+		color: #000;
+	}
+	ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /
+		background-color: #6F7D94;
+		color: #FFF;
+	}
+	.footer {
+		padding: 10px 0;
+		background-color: #FFF;
+		position: relative;
+		clear: both; 
+	}
 
-  <body>
+</style>
 
-<h1 itemprop="title">initPFAtoolbox</h1>
 
+<body>
+
+<div class="container">
+  <div class="header">
+    <center><font size="+3"> <strong>Posibilistic Flux Analysis (PFA)</strong></font></center></div>
     
-  </body>
-</html>
 
+  <div class="sidebar1">
+      <br/>
+      <p><a href="url">initPFAtoolbox</a></p>
+      <p><a href="url">define_PossMeassurements</a></p>  
+      <p><a href="url">define_MOC</a></p>
+      <p><a href="url">define_MEC</a></p>
+      <p><a href="url">solve_Interval</a></p>
+      <p><a href="url">solve_maxPoss</a></p>
+      <p><a href="url">solve_maxPosIntervals</a></p>
+      <p><a href="url">solve_PossInterval</a></p>
+      <p><a href="url">solve_PossIntervalYMP</a></p>
+      <p><a href="url">plot_PossMeasurements</a></p>
+      <p><a href="url">plot_distribution</a></p>
+      <p><a href="url">plot_intervals</a></p></div>
+
+  
+  <div class="content">
+    <h1 style="color:#F90;margin-bottom:0">initPFAtoolbox</h1>
+    
+    <p>Initiation of the Possibilistic Flux Analysis Toolbox.</p>
+    
+    <h2>Syntax<hr></h2>
+    
+    <p><code style="font-size:16px;padding:10px 885px 10px 10px; background-color:#CCC">initPFAtoolbox()</code></p>
+    
+    <br/>        
+            
+    <h2 style="margin-bottom:0">Description<hr/></h2>
+    <p>This scripts initializes the Possibilistic Flux Analysis Toolbox. It adds the toolbox folder to the Matlab path. If YALMIP is not already 			installed, a copy is add to the path. The optimization solver GLPK is selected, if it is currently installed and is detected. Otherwise, YALMIP is initialized with the available solver.</p>
+    <p>The optimization solver can be changed using the YALMIP function, for example: </p>
+
+     <p><code  style="font-size:16px;padding:10px 810px 10px 10px; background-color:#CCC">yalmip(‘solver’,’glpk’);</code></p>
+       
+    <p>Please read the YALMIP help for details about its options.</p>
+
+  </div>
+  <div class="footer">
+    <p align="right"><a href="url">about</a></p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>
